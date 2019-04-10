@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> Formulário de pagamento </title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form enctype="multipart/form-data" method="POST" action="pagamentophp.php">
+<form enctype="multipart/form-data" method="POST" action="contaphp.php">
+<link href="pagamento.css" rel="stylesheet" type="text/css">
+<div class="corpo" align="center"> 
+	<h1>Formulario forma de pagamento</h1>
+
+
+</div>
+
+
+
+<form  action="conta.php" method="GET">
+<p> Valor da Compra <input type="float" name="preco" size=20></p>
+<label>Forma de pagamento</label><br>
+
+
+<p><input type="radio" name="pag" value="avista">  À vista - 15%de desconto</p>
+<p><input type="radio" name="pag" value="debito">  Débito  - 10%de desconto</p>
+<p><input type="radio" name="pag" value="credito">  Crédito - 5%de desconto</p>
+<p><input type="radio" name="pag" value="parcela"> Parcela <select name="Parcela">
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+	
+
+	
+</select>
+	
+	
+<br>
+<div class="enviar" >
+<p> <input type="submit" value="Enviar"> </p>
+</div>
+</form>
+
+</body>
+</html>		
